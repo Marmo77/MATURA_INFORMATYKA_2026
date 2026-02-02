@@ -85,3 +85,5 @@ for i in range(len(punkty)): # przez wszystkie punkty
                 xp, yp = punkt
                 if(xp == sx and yp == sy): # jesli tak to wypisujemy srodkowe punkty
                     print(f"({x1}, {y1}), ({sx}, {sy}), ({x2}, {y2})") # x1,y1 -> poczatkowy punkt x2,y2 -> koncowy punkt sx,sy -> srodkowy punkt
+                    
+                    
