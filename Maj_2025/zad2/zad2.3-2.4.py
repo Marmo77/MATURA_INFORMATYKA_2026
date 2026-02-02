@@ -33,3 +33,48 @@ for wiersz in wiersze:
         najwyzszy_wynik_text = wiersz
 
 print(f"{najwyzszy_wynik} {najwyzszy_wynik_text}")
+
+
+# 2.4
+
+suma_wynikow_pliku = 0
+suma_wynikow_pliku_text = ""
+
+for wiersz in wiersze:
+    aktualny_wynik = ""
+    wiersz = wiersz.strip()
+    
+    for znak in wiersz:
+        if znak == "o":
+            aktualny_wynik += "0"
+        elif znak == "+":
+            aktualny_wynik += "1"
+        elif znak == "*":
+            aktualny_wynik += "2"
+            
+    # konwersja na dziesietny, poprzez int
+    
+    wynik_dziesietny = int(aktualny_wynik,3)
+    suma_wynikow_pliku += wynik_dziesietny # dla kazdego wiersza obliczamy ile wynosi wynik dziesietny i go dodajemy do wyniku calego pliku
+    
+
+#trzeba teraz sume dziesietna przekontwertowac na trojkowy
+trojkowy_suma = ""
+s = suma_wynikow_pliku
+while s > 0:
+    trojkowy_suma = str(s%3) + trojkowy_suma # dodawanie do przodu zamist dodac na koniec np. 0 na koniec 10 to dodajemy do przodu 01
+    s = s //3 # div mod
+    
+# print(trojkowy_suma)
+
+# teraz trojkowy na symbole
+s_text = suma_wynikow_pliku_text 
+for liczba in trojkowy_suma:
+    if liczba == "0":
+        s_text += "o"
+    elif liczba == "1":
+        s_text += "+"
+    elif liczba == "2":
+        s_text += "*"
+
+print(suma_wynikow_pliku, s_text)
