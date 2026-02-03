@@ -1,7 +1,7 @@
 #3.1
 # NWD
 import math
-plik = open("dron_przyklad.txt", "r")
+plik = open("dron.txt", "r")
 wiersze = plik.readlines()
 
 licznik_nwd = 0
@@ -63,7 +63,7 @@ for wiersz in wiersze:
     
     punkty.append((x,y))
     
-print(punkty)
+# print(punkty)
 
 # punkt[0] i punkt[1] (0,0) i (2000,1001) - wyliczamy srednia i sprawdzamy czy ten punkt znajduje sie w naszych punktach
 
