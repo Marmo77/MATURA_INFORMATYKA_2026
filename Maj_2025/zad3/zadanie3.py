@@ -1,6 +1,10 @@
 #3.1
 # NWD
 import math
+
+
+wynik = open("wynik3.txt", "w")
+
 plik = open("dron.txt", "r")
 wiersze = plik.readlines()
 
@@ -11,14 +15,15 @@ for wiersz in wiersze:
     A = abs(int(wiersz.split(" ")[0])) # abs = bezwzgledna
     # if A < 0: A = A * -1  -> inny sposob na absolutna
     B = abs(int(wiersz.split(" ")[1]))
-    print(A,B)
+    # print(A,B)
     
     nwd = math.gcd(A,B)
     if nwd > 1:
         licznik_nwd += 1
 
 print(licznik_nwd)
-
+wynik.write("3.1\n")
+wynik.write(f"{licznik_nwd}\n")
 
 # def NWD(A, B):
 #     if A < 0:
@@ -30,6 +35,8 @@ print(licznik_nwd)
 #3.2
 print("---\n3.2")
 # a)
+
+wynik.write("3.2\n")
 
 x = 0 #startowe
 y = 0 #startowe
@@ -46,7 +53,9 @@ for wiersz in wiersze:
     if x > 0 and x < 5000 and y > 0 and y < 5000:
         naleza_wewnatrz +=1
         
+        
 print(naleza_wewnatrz)
+wynik.write(f"a.\n{naleza_wewnatrz}\n")
 
 
 x,y = 0, 0
@@ -66,7 +75,7 @@ for wiersz in wiersze:
 # print(punkty)
 
 # punkt[0] i punkt[1] (0,0) i (2000,1001) - wyliczamy srednia i sprawdzamy czy ten punkt znajduje sie w naszych punktach
-
+wynik.write(f"b.\n")
 for i in range(len(punkty)): # przez wszystkie punkty
     for j in range(i+1, len(punkty)):
         x1, y1 = punkty[i]
@@ -85,5 +94,5 @@ for i in range(len(punkty)): # przez wszystkie punkty
                 xp, yp = punkt
                 if(xp == sx and yp == sy): # jesli tak to wypisujemy srodkowe punkty
                     print(f"({x1}, {y1}), ({sx}, {sy}), ({x2}, {y2})") # x1,y1 -> poczatkowy punkt x2,y2 -> koncowy punkt sx,sy -> srodkowy punkt
-                    
+                    wynik.write(f"({x1}, {y1}), ({sx}, {sy}), ({x2}, {y2})\n")
                     
