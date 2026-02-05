@@ -63,7 +63,7 @@ print(", ".join(str(liczba) for liczba in mozna_obliczyc))
 #zadanie 4.4.
 
 
-LiczbyPierwsze: list[int] = linie[0].strip().split(" ") # dzielniki
+# linia1: list[int] = linie[0].strip().split(" ") # dzielniki
 # linia2: list[int] = linie[1].strip().split(" ") # liczby
 
 print(linia2)
@@ -94,9 +94,36 @@ print(linia2)
 # to działa tylko dla elementów a nie ich fragmentow :(
     
 # tutaj miałem błedne myślenie myślałem że chodzi o to że wspólne elementy to takie które są takie same czyli np liczba 5 wystepuje w liczby_przyklad.txt 50 razy to srednia z niej ale to nie ma sensu bo to zawsze jest 5 :D
+
 # ----------------------------  
 
+# ----------------------- nowe podejście: -----------------------
+# sprawdzamy sume każdych następnych elementów w grupach 50 czyli od index 0 do 49 i jego średnia
+# pozniej 1 - 50 i srednia i tak wszystkie elementy do konca tablicy - 49 bo ostatni fragment to od len(tablicy)-49 do jej dlugosci i zlicza srednia, z tych wszystkich bierzemy największą srednia i sprawdzamy czy da się dodać ewentualnie kolejny element i zobaczyc czy srednia sie zwieksza jesli tak to dodajemy i sprawdzamy nastepny do poki srednia nie bedize mniejsza od poprzedniej :D
 
+liczbyPierwsze = list(map(int, linie[0].strip().split(" ")))
+# print(liczbyPierwsze)
+
+max_srednia = 0
+cala_tablica_max = []
+zakres_sredniej: list[int, int] = 0, 0
+for i in range(len(liczbyPierwsze)-49):
+    tablica_ze_srednimi = []
+    for j in range(i, i+50,1): # liczmy od zakresu i do i +50, czyli 50 elementów listy od 0-49, 1-50, 2-51 i tak każdy zliczamy
+        tablica_ze_srednimi.append(liczbyPierwsze[j])
+    
+    srednia = sum(tablica_ze_srednimi) / len(tablica_ze_srednimi)
+    # print(srednia)
+    if srednia > max_srednia:
+        max_srednia = srednia
+        cala_tablica_max = tablica_ze_srednimi
+        zakres_sredniej = [i, i+50]
+        
+# mając już ten najlepszy teraz bedziemy sprawdzać czy jeśli nie dodamy następnego elementu to srednia nie urosnie, jesli nie to jest nasz maksymalny zakres, jesli tak to zmieniamy 
+print(f"Największa srednia dla liczby 50 elementów: {max_srednia}")
+print(f"Liczba elementów: {len(cala_tablica_max)}")
+print(f"Początkowa liczba: {cala_tablica_max[0]}")
+# dziala tylko dla 50 elementów a nie jesli jest wieksza grupa, dziala przy zalozeniu ze najwieksza dlugosc bedzie 50
 
 
 
@@ -104,4 +131,4 @@ print(linia2)
 
 # 1. F
 # 2. F
-# 3, P
+# 3. P
