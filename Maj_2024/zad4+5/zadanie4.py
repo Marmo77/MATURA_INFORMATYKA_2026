@@ -63,12 +63,38 @@ print(", ".join(str(liczba) for liczba in mozna_obliczyc))
 #zadanie 4.4.
 
 
-linia1: list[int] = linie[0].strip().split(" ") # dzielniki
-linia2: list[int] = linie[1].strip().split(" ") # liczby
+LiczbyPierwsze: list[int] = linie[0].strip().split(" ") # dzielniki
+# linia2: list[int] = linie[1].strip().split(" ") # liczby
 
 print(linia2)
 
 
+# ----------------------------  
+# wystapienia: dict[int, int] = {}
+
+# # zliczamy ile razy występują w tekscie
+# for liczba in linia1:
+#     liczba = int(liczba)
+#     # print(liczba)
+#     wystapienia[liczba] = wystapienia.get(liczba, 0) +1
+#     # wypisuje wystąpienia
+# # print(wystapienia) 
+
+# # elminujemy te co jest < mninej niż 50
+
+# jedyne_mozliwe = []
+
+# for klucz, wartosc in wystapienia.items():
+    
+#     if wartosc >= 50:
+#         jedyne_mozliwe.append(klucz)
+
+# print(jedyne_mozliwe) # zmniejszamy zakres szukanych liczb tylko do takich ktore wystepują min. 50 razy w lini1
+
+# to działa tylko dla elementów a nie ich fragmentow :(
+    
+# tutaj miałem błedne myślenie myślałem że chodzi o to że wspólne elementy to takie które są takie same czyli np liczba 5 wystepuje w liczby_przyklad.txt 50 razy to srednia z niej ale to nie ma sensu bo to zawsze jest 5 :D
+# ----------------------------  
 
 
 
