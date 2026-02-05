@@ -125,10 +125,3 @@ print(f"Liczba elementów: {len(cala_tablica_max)}")
 print(f"Początkowa liczba: {cala_tablica_max[0]}")
 # dziala tylko dla 50 elementów a nie jesli jest wieksza grupa, dziala przy zalozeniu ze najwieksza dlugosc bedzie 50
 
-
-
-# zad 5
-
-# 1. F
-# 2. F
-# 3. P
