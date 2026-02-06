@@ -1,0 +1,30 @@
+zadanie 7.1.
+164-61-25-530	12185
+159-34-45-151	12047
+091-99-74-175	11769
+
+zadanie 7.2.
+przychód całkowity: 2 422 669,4
+Odmiana z największym przychodem: Reneta
+
+zadanie 7.3.
+Najpopularniejsza	Ilość
+
+Styczeń- Gala		14017
+Luty- Gala		14969
+Marzec- Jonagored	15079
+Kwiecień- Gala		19404
+Maj- Gala		17382
+Czerwiec- Reneta	18661
+Lipiec- Melba		21216
+Sierpień- Reneta	19054
+Wrzesień- Reneta	20881
+Październik- Reneta	17065
+Listopad- Reneta	19755
+Grudzień- Jonagored	13425
+
+zadanie 7.4.
+
+SUMA RABATÓW:			3089,10
+ILOŚĆ PRZYZNANYCH RABATÓW:	180
+

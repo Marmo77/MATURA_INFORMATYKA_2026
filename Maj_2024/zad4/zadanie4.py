@@ -113,6 +113,14 @@ for i in range(len(liczbyPierwsze)-49):
         tablica_ze_srednimi.append(liczbyPierwsze[j])
     
     srednia = sum(tablica_ze_srednimi) / len(tablica_ze_srednimi)
+    #sprawdzamy czy jesli dodamy kolejny element tablicy to srednia bedzie wieksza jesli tak do dodajemy do momentu gdy jest wieksza
+    # sredniazElementem = tablica_ze_srednimi.append() 
+    # if srednia < tablica_ze_srednimi.append
+    # nowa_tablica = tablica_ze_srednimi
+    # nowa_tablica.append(i+1) 
+    # print(nowa_tablica)
+    
+    
     # print(srednia)
     if srednia > max_srednia:
         max_srednia = srednia
