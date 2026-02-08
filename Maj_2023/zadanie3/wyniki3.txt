@@ -2,3 +2,7 @@
 902
 
 3.2.
+Najmniejsza
+88 80
+Najwieksza
+65 124
