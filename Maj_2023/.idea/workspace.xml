@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f8aed0-fd9c-4184-888a-45f2e799f2e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/zadanie2/winiki2_5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zadanie2/zadanie2.py" afterDir="false" />
-    </list>
+    <list default="true" id="85f8aed0-fd9c-4184-888a-45f2e799f2e9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +103,7 @@
       <updated>1770394078385</updated>
       <workItem from="1770394079442" duration="7260000" />
       <workItem from="1770548768269" duration="2505000" />
-      <workItem from="1770554350747" duration="1420000" />
+      <workItem from="1770554350747" duration="1492000" />
     </task>
     <servers />
   </component>

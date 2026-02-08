@@ -95,6 +95,7 @@ print(binarna_najwiekszej)
 
 plik = open("bin.txt", "r")
 
+zapisz_wynik = open("wyniki2_5.txt", "w")
 # w zadaniu trzeba:
 # liczbe binarna na dziesietna przekonwertowac
 # p div 2 = liczba dziesietna / 2 = int w dol zaokraglony
@@ -162,5 +163,6 @@ for wiersz in plik.readlines():
     wynik_XOR = wynik_XOR[::-1]
     wynik_XOR = pozostalosci_niezmieniane + wynik_XOR
     print(wynik_XOR)
+    zapisz_wynik.write(wynik_XOR + "\n")
     # wynik_XOR)
 
