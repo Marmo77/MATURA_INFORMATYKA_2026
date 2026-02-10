@@ -6,3 +6,6 @@ Najmniejsza
 88 80
 Najwieksza
 65 124
+
+3.3.
+444

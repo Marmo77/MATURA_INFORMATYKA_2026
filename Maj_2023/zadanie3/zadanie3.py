@@ -1,6 +1,6 @@
 
-# plik = open('pi_przyklad.txt', 'r')
-plik = open('pi.txt', 'r')
+plik = open('pi_przyklad.txt', 'r')
+# plik = open('pi.txt', 'r')
 
 # Zadanie 3.1.
 
@@ -28,7 +28,7 @@ for i in range(len(znaki)-1):
     else:
         pary[para] = 1
 
-print(pary)
+# print(pary)
 powyzej90 = 0
 for k, v in pary.items(): # przez kazdą pare przechodzimy
     if int(k) > 90: # jeśli klucz czyli liczba wieksza niz 90
@@ -68,7 +68,6 @@ for k, v in pary_z_wszystkimi.items():
 
 
     if v > najwieksza_v: # jesli wartosc danej jest wieksza od najwiekszej
-        print(v)
         najwieksza_v = v
         najwieksza_k = k
     elif v < najmniejsza_v: # jesli wartosc jest mniejsza niz najmniejsza to ja ustaw
@@ -84,4 +83,40 @@ print(najwieksza_k,najwieksza_v)
 
 # Zadanie 3.3.
 
-# ciągi 
+# ciągi 6 cyfrowe ciagi rosnaco malejace
+
+# for plik.readlines() as plik:
+
+plik = open('pi.txt', 'r')
+# plik = open('pi_przyklad.txt', 'r')
+dlugosc_ciagu = 6
+grupy = []
+
+liczby = ''
+
+for liczba in plik.readlines():
+    liczba = liczba.strip()
+    liczby += liczba
+
+
+for i in range(len(liczby)-5):
+    grupa = liczby[i:i+6]
+    # print(grupa)
+    grupy.append(grupa)
+
+# print(grupy)
+
+ciagi_rosnaco_malejace = []
+for ciag in grupy:
+    ciag_rosnacy = ciag[:3]
+    ciag_malejacy = ciag[3:]
+    # print(ciag_rosnacy)
+    # print(ciag_malejacy)
+    jest_rosnacy:bool = ciag_rosnacy[0] <= ciag_rosnacy[1] <= ciag_rosnacy[2]
+    # print(jest_rosnacy)
+    jest_malejacy: bool = ciag_malejacy[0] >= ciag_malejacy[1] >= ciag_malejacy[2]
+    # print(jest_rosnacy)
+    if jest_rosnacy and jest_malejacy: # jeśli jest rosnący do połowy i malejacy od polowy
+        ciagi_rosnaco_malejace.append(int(ciag))
+
+print(len(ciagi_rosnaco_malejace))
