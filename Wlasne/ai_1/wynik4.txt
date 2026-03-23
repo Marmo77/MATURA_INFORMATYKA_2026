@@ -1,0 +1,10 @@
+Zadanie 4.1.
+Liczba punktów w I ćwiartce: 51
+Najdalszy punkt: 33, 56
+--------
+Zadanie 4.2.
+Symetryczne: 36
+Para lustrzana: (12, 5) oraz (12, -5)
+--------
+Zadanie 4.3.
+Trójkątów Prostokątnych jest: 15

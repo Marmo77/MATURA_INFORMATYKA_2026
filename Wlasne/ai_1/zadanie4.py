@@ -105,16 +105,49 @@ print("----------")
 # szukamy elementów z granicy (od 0 do dlugosc tablicy -2 czyli ostatni element będzie
 # np. 6,7,8 i nie wyjdzie za tablice, bo jesli bylby 7,8,NaN to bysmy wyszli za pętle
 
-wszystkie_kordynaty = kordynaty
-print(wszystkie_kordynaty)
+def liczenie_prostej(x1,y1,x2,y2):
+    # definicja dlugosci prostej:
+    # Pierwiastek z: (x1-x2)^2 + (y1-y2)^2
+    pierwiastkowana = (x1-x2)**2 + (y1-y2)**2
+    # dlugosc_prostej = math.sqrt(pierwiastkowana)
+    return pierwiastkowana
+
+wszystkie_kordynaty = []
+ile_jest_prostokatnych = 0
+with open("punkty.txt", "r") as plik:
+    for linia in plik:
+        linia = linia.strip()
+        x,y = linia.split(" ")
+        x,y = int(x),int(y)
+        wszystkie_kordynaty.append([x,y])
+
+
+# print(wszystkie_kordynaty)
 for idx in range(len(wszystkie_kordynaty)-2):
     kordynaty_1 = wszystkie_kordynaty[idx]
     kordynaty_2 = wszystkie_kordynaty[idx+1]
     kordynaty_3 = wszystkie_kordynaty[idx+2]
-    print(f"Kordynaty 1: {kordynaty_1}")
-    print(f"Kordynaty 2: {kordynaty_2}")
-    print(f"Kordynaty 3: {kordynaty_3}")
+
+    k1_x,k1_y = kordynaty_1[0],kordynaty_1[1]
+    k2_x,k2_y = kordynaty_2[0],kordynaty_2[1]
+    k3_x,k3_y = kordynaty_3[0],kordynaty_3[1]
+
+    # print(f"Kordynaty 1: {kordynaty_1}")
+    # print(f"Kordynaty 2: {kordynaty_2}")
+    # print(f"Kordynaty 3: {kordynaty_3}")
 
     # potrzebujemy obliczyć 3 proste: |AB| |AC| |BC|, załóżmy że k1 = A, k2=B, k3=C
     #teraz liczymy długości prostych
-    prosta_AB =
+    prosta_AB = liczenie_prostej(k1_x,k1_y,k2_x,k2_y)
+    prosta_AC = liczenie_prostej(k1_x,k1_y,k3_x,k3_y)
+    prosta_BC = liczenie_prostej(k2_x,k2_y,k3_x,k3_y)
+
+    proste = [prosta_AB,prosta_AC,prosta_BC]
+    proste.sort()
+
+    if proste[0] + proste[1] == proste[2]:
+        ile_jest_prostokatnych += 1
+        # print("jest prostokątny")
+        # print(f"{proste[0]+proste[1]} = {proste[2]}")
+
+print(f"Trójkątów Prostokątnych jest: {ile_jest_prostokatnych}")
