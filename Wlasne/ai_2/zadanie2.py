@@ -1,4 +1,5 @@
 # ZADANIE 2
+from cmath import sqrt
 
 # 2.1.
 
@@ -28,12 +29,35 @@ for liczba,wartosc in liczby.items():
         najwieksze_wartosci.append(liczba)
 
 # print(int(najwieksze_wartosci[0], 2))
-najwieksze_wartosci.append("1111111")
 if len(najwieksze_wartosci) > 1 :
     najwieksza_wartosc = max(int(najwieksze_wartosci[i], 2) for i in range(len(najwieksze_wartosci)))
     najwieksza_wartosc = bin(najwieksza_wartosc)[2:]
-    print("maks")
 else:
     najwieksza_wartosc = int(najwieksze_wartosci[0])
 
-print(najwieksza_wartosc)
+print(f"Największa liczba: {najwieksza_wartosc}")
+
+
+# 2.2.
+
+def na_dziesietne(binarna) -> int:
+    return int(binarna,2)
+
+
+def SitoErastotelese(n):
+    pierwsze = [True for _ in range(n+1)]
+    pierwsze[0] = pierwsze[1] = False #0 i 1
+    for i in range(2, int(n**0.5)+1):
+        if pierwsze[i]:
+            for j in range(i*i, n+1,i):
+                pierwsze[j] = False
+
+    pierwszeLiczby =[]
+    for i in range(len(pierwsze)):
+        if pierwsze[i]:
+            pierwszeLiczby.append(i)
+    return pierwszeLiczby
+
+pierwsze = SitoErastotelese(100)
+
+print(pierwsze)
