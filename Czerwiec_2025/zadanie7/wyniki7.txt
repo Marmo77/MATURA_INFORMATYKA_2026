@@ -1,0 +1,24 @@
+7.1.
+Marta Jasczyk, wydała: 4846.
+
+
+7.2.
+id_klienta	imie	nazwisko
+K358	Anna	Dymek
+K151	Anna	Mason
+K052	Anna	Wiatr
+K275	Barbara	Wroblewska
+K045	Grzegorz	Sikora
+K227	Hanna	Mazur
+K224	Krzysztof	Orlik
+K164	Krzysztof	Szostak
+K221	Marcin	Ozga
+K221	Marcin	Ozga
+K374	Marek	Sitko
+K277	Mateusz	Szymczyk
+K137	Natalia	Chwiszczuk
+K282	Natalia	Kejza
+K282	Natalia	Kejza
+
+7.3.
+Rabaty: 1858,1
