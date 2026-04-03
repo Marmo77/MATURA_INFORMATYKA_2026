@@ -10,3 +10,21 @@ Zadanie 6.2.
 
 Zadanie 6.3.
 
+IdUcznia	Imie		Nazwisko
+314		Sebastian	Rabaj	
+172		Monika		Kado	
+299		Alicja		Kronecka
+
+/*Wejscie
+HourWejscie*60 + Minuty wejście = dla 7:20 = 440 min wejście
+
+Wyjscie:
+Hour Wyjscie*60 + minute wyjsiie = dla 15:10 = 910 min wejście
+
+Wyjscie - Wejscie = Czas jaki był w szkole = 470 minut
+
+Zadanie 6.4.
+
+Imie i Nazwisko z tabeli Uczyn nie znajduje się w logach z 06.03
+
+Stworzyc 2 kwerendy: Jedna wypisuje tych co byli 6'tego, druga: co są w ogóle w szkole i kreator kwerendy wyszukuje niepasujących danych czyli roznice tych.
