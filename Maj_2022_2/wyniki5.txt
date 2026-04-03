@@ -9,3 +9,18 @@ Zadanie 5.2.
 Liczba dni najdłuższego okresu: 8
 Pierwszy dzień okresu: 	07.10.2021
 Ostatni dzień okresu: 	14.10.2021
+
+Zadanie 5.3.
+
+Gniezno		819000
+Malbork		944240
+Ogrodzieniec	1115560
+Przemysl	1062920
+
+Zadanie 5.4.
+
+Pierwsze zamówienie zrealizowane przez filie:
+Data: 			19.03.2021
+Numer zamówienia: 	153
+Ilość zamówień przekazanych przez filie w ciągu całego roku: 34 X
+Ilość butelek łącznie przekazanych przez filie: 285020 X
