@@ -1,0 +1,11 @@
+Zadanie 5.1.
+
+Gniezno		152
+Malbork		183
+Ogrodzieniec	222
+Przemysl	198
+
+Zadanie 5.2.
+Liczba dni najdłuższego okresu: 8
+Pierwszy dzień okresu: 	07.10.2021
+Ostatni dzień okresu: 	14.10.2021
