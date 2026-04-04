@@ -1,0 +1,69 @@
+Fryzjerzy:
+7.1. 
+
+SELECT
+    Klienci.id_klienta,
+    Klienci.imie,
+    Klienci.nazwisko,
+    Sum(Uslugi.cena) AS SumaOfcena
+FROM
+    Uslugi
+    INNER JOIN (
+        Klienci
+        INNER JOIN Wizyty ON Klienci.id_klienta = Wizyty.id_klienta
+    ) ON Uslugi.id_uslugi = Wizyty.id_uslugi
+GROUP BY
+    Klienci.id_klienta,
+    Klienci.imie,
+    Klienci.nazwisko
+ORDER BY
+    Sum(Uslugi.cena) DESC;
+
+7.2.
+
+SELECT
+    DISTINCTROW Klienci.id_klienta,
+    Klienci.imie,
+    Klienci.nazwisko
+FROM
+    Klienci
+    INNER JOIN (
+        Fryzjerzy
+        INNER JOIN Wizyty ON Fryzjerzy.id_fryzjera = Wizyty.id_fryzjera
+    ) ON Klienci.id_klienta = Wizyty.id_klienta
+WHERE
+    (((Fryzjerzy.imie) = [Klienci].[imie]))
+GROUP BY
+    Klienci.id_klienta,
+    Klienci.imie,
+    Klienci.nazwisko,
+    Wizyty.termin,
+    Fryzjerzy.imie;
+
+7.3.
+
+Czas między 600 a 720 łącznie
+Hour(termin) *60 + Minute(termin) in between 600 and 720
+
+SELECT
+    Sum([cena] * 0.1) AS RabatEmeryta
+FROM
+    Uslugi
+    INNER JOIN (
+        Klienci
+        INNER JOIN (
+            Fryzjerzy
+            INNER JOIN Wizyty ON Fryzjerzy.id_fryzjera = Wizyty.id_fryzjera
+        ) ON Klienci.id_klienta = Wizyty.id_klienta
+    ) ON Uslugi.id_uslugi = Wizyty.id_uslugi
+WHERE
+    (
+        (
+            (Hour ([termin]) * 60 + Minute ([termin])) BETWEEN 600 AND 720
+        )
+        AND ((Klienci.emeryt) = "TAK")
+    );
+
+
+7.4.
+
