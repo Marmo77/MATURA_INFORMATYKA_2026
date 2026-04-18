@@ -1,3 +1,4 @@
+from enum import Flag
 
 ciag = []
 
@@ -35,3 +36,21 @@ def SumaKwCyfr(n):
         n_copy = n_copy // 10
     return suma
 print(SumaKwCyfr(123))
+
+#1.3.
+print("-------------------------")
+
+def CzyNudna(n):
+    odwiedzone = set()
+
+    while n !=1 and n not in odwiedzone:
+        odwiedzone.add(n)
+        print(odwiedzone)
+        n = SumaKwCyfr(n) # teraz sumujemy
+    #jesli suma = 1 t
+    if n == 1:
+        return True
+    else:
+        return False
+
+print(CzyNudna(13))
