@@ -1,0 +1,57 @@
+Zadanie 6.1.
+Ilość Tiebreak'ów: 109
+
+Zadanie 6.2.
+Miasto	LiczbaRozegranychMeczow
+Wiralow		41
+Kukurykow	39
+Szymbark	32
+Preziowo	30
+Bialowo		21
+Gorkowo		18
+Kielkowo	17
+Licowo		15
+Sadelko		15
+Radelko		15
+Koszalkowo	15
+Barylkowo	14
+Orecin		14
+Rezkow		13
+Warkowo		13
+Lewkowo		12
+
+Zadanie 6.3.
+Imie		Nazwisko		IloscMeczy
+Barbara		Kaczmarek		21
+Franciszek	Dudek			27
+Kamila		Majewska		21
+Katarzyna	Olszewska		25
+Monika		Kowalczyk		26
+Natalia		Jankowska		36
+Szymon		Rutkowski		21
+
+Zadanie 6.4.
+Imie		Nazwisko
+Agnieszka	Wieczorek
+Anna		Nowak
+Barbara		Kaczmarek
+Franciszek	Dudek
+Jan		Malinowski
+Kamila		Majewska
+Piotr		Lewandowski
+Zofia		Grabowska
+
+Zadanie 6.5.
+Nazwa		Miasto		WygraneMecze	PrzegraneMecze
+Astecja		Rezkow		10		3
+Bradownia	Preziowo	9		9
+Huraganer	Szymbark	8		8
+Libero		Warkowo		8		5
+Olimpia		Orecin		9		5
+Sfinks		Szymbark	9		7
+Spirca		Lewkowo		6		6
+Stolar		Wiralow		11		9
+Victoria	Radelko		10		5
+Waleczni	Preziowo	7		5
+Zenit		Licowo		8		7
+Zjednoczeni	Kukurykow	10		8
