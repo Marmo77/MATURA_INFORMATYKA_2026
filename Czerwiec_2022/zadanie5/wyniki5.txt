@@ -1,0 +1,18 @@
+Zadanie 5.1.
+Data początkowa: 17.08.2022
+Data końcowa:	 31.08.2022
+
+Zadanie 5.2.
+Miesiąc		Hot-Dogi	Lody	Kukurydza
+Czerwiec	2639		3527	2355
+Lipiec		2747		3675	2448
+Sierpień	2665		3579	2390
+
+Zadanie 5.3.
+Dzień przekroczenia 45 tyś. utargu:  27.06.2022
+Suma utargów do tego dnia włącznie:  45 358 zł
+
+Zadanie 5.4.
+a) Pierwszy raz dzienny utarg mnijeszy niż 1000zł: 23.09.2022
+
+b) Minimalna kwota podniesienia aby dzienny utarg był co najmniej 1000zł: 1,34 zł 
