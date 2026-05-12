@@ -1,0 +1,8 @@
+Must have schematy / skrypty w pythonie:
+
+- NWD (math.gcd)
+- NWW (math.lcm)
+- Sortowanie bąbelkowe
+- Liczby pierwsze
+- Przeszukiwanie binarne
+- algorytm Hornera
