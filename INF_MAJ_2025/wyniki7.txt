@@ -1,0 +1,44 @@
+Zadanie 7.1.
+Nazwa obszaru: Mare Boreum
+
+Zadanie 7.2.
+Nazwa łazika: Spirit 14
+Pierwszy pomiar: 29.08.2066
+Ostatni pomiar: 25.07.2076
+
+
+
+Zadanie 7.4.
+Nazwy łazików:
+
+Mariner 14
+Mariner 15
+Mariner 20
+Phoenix 13
+Phoenix 3
+Rosetta 1
+Rosetta 8
+Spirit 12
+Spirit 7
+Viking 17
+
+Zadanie 7.5.
+
+SELECT DISTINCT
+    Producent.nazwa
+FROM
+    Obszary
+    INNER JOIN (
+        (
+            Producent
+            INNER JOIN Laziki ON Producent.kod_producenta = Laziki.kod_producenta
+        )
+        INNER JOIN Pomiary ON Laziki.nr_lazika = Pomiary.nr_lazika
+    ) ON Obszary.kod_obszaru = Pomiary.kod_obszaru
+WHERE
+    (
+        ((Year([data_pomiaru])) = 2060)
+        AND ((Obszary.nazwa_obszaru) = "Arcadia")
+    )
+GROUP BY
+    Producent.nazwa;
