@@ -1,4 +1,5 @@
 Zadanie 8.1.
+177
 
 Zadanie 8.2.
 wymiana plynu chłodniczego 29
@@ -34,7 +35,8 @@ Listopad: 150530
 Grudzień: 105860
 
 Zadanie 8.5.
-SELECT wlasciciele.imie, wlasciciele.nazwisko, Samochody.nr_rejestracyjny, Samochody.rok_produkcji
+SELECT wlasciciele.imie, wlasciciele.nazwisko
 FROM wlasciciele INNER JOIN Samochody ON wlasciciele.id_wlasciciela = Samochody.id_wlasciciela
 WHERE (((Samochody.nr_rejestracyjny) Like "SH*") AND ((Samochody.rok_produkcji)=2020))
-ORDER BY wlasciciele.nazwisko DESC;
+ORDER BY wlasciciele.nazwisko;
+
