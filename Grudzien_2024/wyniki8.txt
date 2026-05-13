@@ -1,0 +1,40 @@
+Zadanie 8.1.
+
+Zadanie 8.2.
+wymiana plynu chłodniczego 29
+
+bmw
+daewoo
+honda
+kia
+lancia
+mazda
+nissan
+saab
+volkswagen
+
+Zadanie 8.3.
+id_wlasciciela: 897
+Cena łączna: 	1340
+
+Rejestracje:
+SB 3799
+SB 9213
+SB 5822
+Usługi:
+wymiana sprzegla
+wymiana amortyzatora tyl
+felga stalowa do 16 cali
+ozonowanie ukladu klimatyzacji i kabiny
+wymiana paska rozrzadu
+wymiana oleju silnikowego z filtrem
+
+Zadanie 8.4.
+Listopad: 150530
+Grudzień: 105860
+
+Zadanie 8.5.
+SELECT wlasciciele.imie, wlasciciele.nazwisko, Samochody.nr_rejestracyjny, Samochody.rok_produkcji
+FROM wlasciciele INNER JOIN Samochody ON wlasciciele.id_wlasciciela = Samochody.id_wlasciciela
+WHERE (((Samochody.nr_rejestracyjny) Like "SH*") AND ((Samochody.rok_produkcji)=2020))
+ORDER BY wlasciciele.nazwisko DESC;
