@@ -1,0 +1,19 @@
+Zadanie 7.1.
+PC	16
+Phone	2814
+Tablet	267
+
+Zadanie 7.2.
+Samsung	478
+
+Zadanie 7.3.
+SWITZERLAND 5,28
+SLOVENIA 4,35
+IRELAND 3,91
+AUSTRIA 3,84
+CZECH REPUBLIC 3,76
+
+Zadanie 7.4.
+--
+Zadanie 7.5.
+SELECT firmy.nazwa, Count(Instalacje.data_i) AS PoliczOfdata_i FROM firmy INNER JOIN Instalacje ON firmy.id_firmy = Instalacje.id_firmy GROUP BY firmy.nazwa SORT BY Count(instalacje.data_i) DISC;
