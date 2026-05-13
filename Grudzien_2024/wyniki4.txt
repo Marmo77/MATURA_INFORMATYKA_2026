@@ -1,0 +1,11 @@
+Zadanie 4.1.
+Największe: 1545605418
+Najmniejsze: 10425
+
+Zadanie 4.2.
+10 1001 627
+
+4.3.
+2 prostokąty: 79506
+3 prostokąty: 118786
+5 prostokątów: 180895
